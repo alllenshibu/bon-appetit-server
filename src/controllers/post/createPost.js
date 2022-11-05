@@ -18,20 +18,7 @@ const createPost = async (req, res) => {
     } = req.body
 
     const createdOn = new Date().toUTCString({ timeZone: 'Asia/Tokyo' })
-    console.log({
-        title,
-        desc,
-        numberOfServing,
-        expiry,
-        isNonVeg,
-        username,
-        coordinates,
-        address,
-        city,
-        state,
-        contactInfo,
-        photoLink,
-    })
+
     try {
         const user = await Post.create({
             userId: req.user._id,
@@ -51,26 +38,12 @@ const createPost = async (req, res) => {
         })
 
         res.status(201).json({
-            userId,
-            title,
-            desc,
-            createdOn,
-            numberOfServing,
-            expiry,
-            isNonVeg,
-            username,
-            coordinates,
-            address,
-            city,
-            state,
-            contactInfo,
-            photoLink,
-            m,
+            message: "Post Created Successfully",
+            data: user
         })
     } catch (err) {
         return res
-            .status(500)
-            .json({ error: 'Something went wrong', message: err.message })
+            .status(500).json({ error: 'Something went wrong', message: err.message })
     }
 }
 
