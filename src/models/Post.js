@@ -2,12 +2,10 @@ const mongoose = require('mongoose')
 const Schema = mongoose.Schema
 
 const PostSchema = new Schema({
-    uid: String,
     title: { type: String, required: true },
     desc: String,
     numberOfServing: { type: Number, required: true },
     expiry: { type: Date, required: true },
-    userName: String,
     coordinates: {
         lat: Number,
         lng: Number,

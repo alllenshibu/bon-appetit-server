@@ -11,12 +11,9 @@ const UserSchema = new Schema({
     type: String, // user type [volunteer, org]
     name: String,
     phoneNumber: String,
-    coordinates: {
-        lat: Number,
-        lon: Number,
-    },
     imageUrl: String,
     city: String,
+    state:String,
 
     //Organization extra fields
     domain: String,
