@@ -15,7 +15,7 @@ const UserSchema = new Schema({
         lat: Number,
         log: Number,
     },
-    imageUrl:String,
+    imageUrl: String,
 
     //Organization extra fields
     domain: String,
