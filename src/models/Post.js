@@ -1,29 +1,49 @@
 const mongoose = require('mongoose')
+const User = require('./User')
 const Schema = mongoose.Schema
 
 const PostSchema = new Schema({
-    uid: String,
+    userId: {
+        type: Schema.Types.ObjectId,
+        ref: User,
+    },
     title: { type: String, required: true },
     desc: String,
+    createdOn: { type: Date, required: true },
     numberOfServing: { type: Number, required: true },
     expiry: { type: Date, required: true },
+    isNonVeg: { type: Boolean, required: true },
     userName: String,
     coordinates: {
         lat: Number,
         lng: Number,
+    },
+    address: String,
+    city: String,
+    state: String,
+    country: {
+        type: String,
+        default: 'India',
+    },
+    contactInfo: String,
+    photoLink: String,
+    isAccepted: {
+        type: Boolean,
+        default: false,
+    },
+    isDeliveredByVolunteer: {
+        type: Boolean,
+        default: false,
+    },
+    isDeliveryConfirmed: {
+        type: Boolean,
+        default: false,
     },
 })
 
 const Post = mongoose.model('post', PostSchema)
 module.exports = Post
 
-// userId
-// title
-// desc
-// No of Servings
-// Veg or Nonveg
-// FoodExpiry
-// Location GeolocationCoordinates
 // Address
 // City
 // State
@@ -34,4 +54,3 @@ module.exports = Post
 // isDeliveryBydonor
 // isDeliveryByVolunteer
 // isDeliveryConfimed
-// createdAt
