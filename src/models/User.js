@@ -13,9 +13,10 @@ const UserSchema = new Schema({
     phoneNumber: String,
     coordinates: {
         lat: Number,
-        log: Number,
+        lon: Number,
     },
     imageUrl: String,
+    city: String,
 
     //Organization extra fields
     domain: String,
