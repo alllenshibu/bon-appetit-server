@@ -11,10 +11,7 @@ const UserSchema = new Schema({
     type: String, // user type [volunteer, org]
     name: String,
     phoneNumber: String,
-    imageUrl: {
-        type: String,
-        default: ''
-    },
+    imageUrl: String,
     city: String,
     state: String,
 
