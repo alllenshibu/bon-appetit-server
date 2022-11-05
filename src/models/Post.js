@@ -21,17 +21,20 @@ const PostSchema = new Schema({
     address: String,
     city: String,
     state: String,
+    imageUrl:{
+        type: String,
+        default:''
+    },
     country: {
         type: String,
         default: 'India',
     },
     contactInfo: String,
-    photoLink: String,
     isAccepted: {
         type: Boolean,
         default: false,
     },
-    isDeliveredByVolunteer: {
+    isDelivery: {
         type: Boolean,
         default: false,
     },

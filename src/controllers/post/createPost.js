@@ -16,7 +16,7 @@ const createPost = async (req, res) => {
         contactInfo,
         photoLink,
     } = req.body
-
+    const file = req.file.location;
     const createdOn = new Date().toUTCString({ timeZone: 'Asia/Tokyo' })
 
     try {
@@ -35,6 +35,7 @@ const createPost = async (req, res) => {
             state,
             contactInfo,
             photoLink,
+            imageUrl: file 
         })
 
         res.status(201).json({
