@@ -11,7 +11,6 @@ const whitelist = [
   "http://127.0.0.1:3000",
   "http://localhost:3000",
   "http://localhost:3000/",
-  "https://project-ecommerce-88908.herokuapp.com"
 ];
 const corsOptions = {
   origin(origin, callback) {
