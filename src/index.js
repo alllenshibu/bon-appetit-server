@@ -39,6 +39,7 @@ mongoose
 app.use(express.json())
 
 app.use('/api/auth', require('./routes/authRoutes'))
+app.use('/api/volunteer', protectUser, require('./routes/volunteerRoutes'))
 
 ////// TEST/////////
 app.get('/test', protectUser, (req, res) => {

@@ -2,20 +2,20 @@ const mongoose = require('mongoose')
 const Schema = mongoose.Schema
 
 const UserSchema = new Schema({
-    uid: String,
-    password: String,
     email: {
         type: String,
         required: true,
         unique: true,
     },
-    userName: String,
-    type: String, // user type [volunteer, org],
+    password: String,
+    type: String, // user type [volunteer, org]
+    name: String,
     phoneNumber: String,
     coordinates: {
         lat: Number,
-        lng: Number,
+        log: Number,
     },
+    imageUrl:String,
 
     //Organization extra fields
     domain: String,
