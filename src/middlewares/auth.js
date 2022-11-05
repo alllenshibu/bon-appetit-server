@@ -4,7 +4,10 @@ const User = require('../models/User')
 const protectUser = async (req, res, next) => {
     let token
 
-    if (req.headers.authorization && req.headers.authorization.startsWith('Bearer')) {
+    if (
+        req.headers.authorization &&
+        req.headers.authorization.startsWith('Bearer')
+    ) {
         try {
             // get token from header
             token = req.headers.authorization.split(' ')[1]
@@ -14,8 +17,8 @@ const protectUser = async (req, res, next) => {
             // console.log(decoded)
 
             // get user from token
-            let details = await User.findById(decoded.id);
-            req.user = details;
+            let details = await User.findById(decoded.id)
+            req.user = details
             console.log(req.user)
 
             // if (!req.user) {
@@ -28,8 +31,8 @@ const protectUser = async (req, res, next) => {
         } catch (err) {
             console.log(err)
             res.status(401).json({
-                error: "Unauthorized access",
-                messege: err
+                error: 'Unauthorized access',
+                messege: err,
             })
             return
         }
@@ -37,12 +40,11 @@ const protectUser = async (req, res, next) => {
 
     if (!token) {
         res.status(401).json({
-            error: "Unauthorized - no token found"
+            error: 'Unauthorized - no token found',
         })
         return
     }
 }
-
 
 // const protectAdmin = async (req, res, next) => {
 //     let token
@@ -84,6 +86,5 @@ const protectUser = async (req, res, next) => {
 //         return
 //     }
 // }
-
 
 module.exports = { protectUser }
