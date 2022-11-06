@@ -2,7 +2,6 @@ const Post = require('../../models/Post')
 
 const createPost = async (req, res) => {
     const {
-        userId,
         title,
         desc,
         numberOfServing,
@@ -16,7 +15,14 @@ const createPost = async (req, res) => {
         contactInfo,
         photoLink,
     } = req.body
-    const file = req.file.location;
+    if (!req.file) {
+        res.status(400).json({
+            error: "Image not uploaded"
+        })
+        return
+    }
+    const file = req.file;
+    const orginalLink = process.env.BASEURL + "images/" + file.originalname;
     const createdOn = new Date().toUTCString({ timeZone: 'Asia/Tokyo' })
 
     try {
@@ -35,7 +41,7 @@ const createPost = async (req, res) => {
             state,
             contactInfo,
             photoLink,
-            imageUrl: file 
+            imageUrl: orginalLink
         })
 
         res.status(201).json({

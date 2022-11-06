@@ -8,7 +8,7 @@ const imageStorage = multer.diskStorage({
     // Destination to store image     
     destination: 'images',
     filename: (req, file, cb) => {
-        console.log("file", file)
+        // console.log("file", file)
         cb(null, file.originalname)
         // file.fieldname is name of the field (image)
         // path.extname get the uploaded file extension

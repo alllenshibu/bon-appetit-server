@@ -21,9 +21,9 @@ const PostSchema = new Schema({
     address: String,
     city: String,
     state: String,
-    imageUrl:{
+    imageUrl: {
         type: String,
-        default:''
+        default: ''
     },
     country: {
         type: String,
@@ -34,9 +34,17 @@ const PostSchema = new Schema({
         type: Boolean,
         default: false,
     },
+    isAcceptedBy: {
+        type: Schema.Types.ObjectId,
+        ref: User,
+    },
     isDelivery: {
         type: Boolean,
         default: false,
+    },
+    isDeliveredBy: {
+        type: Schema.Types.ObjectId,
+        ref: User,
     },
     isDeliveryConfirmed: {
         type: Boolean,
@@ -46,6 +54,7 @@ const PostSchema = new Schema({
         type: Boolean,
         default: false,
     },
+
 })
 
 const Post = mongoose.model('post', PostSchema)

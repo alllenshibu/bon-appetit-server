@@ -10,9 +10,11 @@ const deliverReq = async (req, res) => {
 
         if (post.isDelivery == false) {
             post.isDelivery = true;
+            post.isDeliveredBy = req.user._id;
             await post.save();
         } else if (post.isDelivery == true) {
             post.isDelivery = false;
+            post.isDeliveredBy = null;
             await post.save();
         }
 
