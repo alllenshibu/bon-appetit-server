@@ -11,7 +11,7 @@ const { imageUpload } = require('../../src/utils/s3');
 // BASE URL - /api/post
 
 router.post('/', imageUpload.single('file'), protectUser, createPost)
-router.get('/', getPost)
+router.get('/', protectUser, getPost)
 router.put('/acceptReq/:id', protectUser, acceptReq);
 router.put('/deliveryReq/:id', protectUser, deliverReq);
 
