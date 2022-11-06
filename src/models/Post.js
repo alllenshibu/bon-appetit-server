@@ -21,10 +21,6 @@ const PostSchema = new Schema({
     address: String,
     city: String,
     state: String,
-    imageUrl: {
-        type: String,
-        default: ''
-    },
     country: {
         type: String,
         default: 'India',

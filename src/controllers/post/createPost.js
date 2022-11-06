@@ -13,7 +13,6 @@ const createPost = async (req, res) => {
         city,
         state,
         contactInfo,
-        photoLink,
     } = req.body
     // if (!req.file) {
     //     res.status(400).json({
@@ -40,8 +39,6 @@ const createPost = async (req, res) => {
             city,
             state,
             contactInfo,
-            photoLink,
-            imageUrl: orginalLink
         })
 
         res.status(201).json({
