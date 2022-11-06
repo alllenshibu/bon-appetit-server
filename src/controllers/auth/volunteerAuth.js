@@ -38,7 +38,7 @@ const volunteerLogin = async (req, res) => {
 }
 
 const volunteerSignup = async (req, res) => {
-    const { email, password } = req.body
+    const { email, password, name } = req.body
     if (!email) {
         return res.status(400).json({ error: 'Invalid email' })
     }
@@ -60,6 +60,7 @@ const volunteerSignup = async (req, res) => {
             email,
             password: encryptPassword,
             type: 'volunteer',
+            name
         })
 
         const token = createToken(user._id)

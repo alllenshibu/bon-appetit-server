@@ -38,7 +38,7 @@ const orgLogin = async (req, res) => {
 }
 
 const orgSignup = async (req, res) => {
-    const { email, password } = req.body
+    const { email, password, name } = req.body
     if (!email) {
         return res.status(400).json({ error: 'Invalid email' })
     }
@@ -60,6 +60,7 @@ const orgSignup = async (req, res) => {
             email,
             password: encryptPassword,
             type: 'org',
+            name
         })
 
         const token = createToken(user._id)
