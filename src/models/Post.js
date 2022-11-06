@@ -40,11 +40,11 @@ const PostSchema = new Schema({
     },
     isDeliveredBy: {
         type: Schema.Types.ObjectId,
-        ref: User,
-    },
-    isDeliveryConfirmed: {
-        type: Boolean,
-        default: false,
+        ref: User, 
+    }, 
+    isDeliveryConfirmed: { 
+        type: Boolean, 
+        default: false, 
     },
     isMyself: { // The User will Deliver the food himself 
         type: Boolean,

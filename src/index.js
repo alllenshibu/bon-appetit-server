@@ -10,6 +10,7 @@ const whitelist = [
     'http://127.0.0.1:3000',
     'http://localhost:3000',
     'http://localhost:3000/',
+    'https://bonappletea.netlify.app/',
 ]
 const corsOptions = {
     origin(origin, callback) {
@@ -37,8 +38,7 @@ mongoose
     .then(console.log('DB Connected'))
 
 app.use(express.json())
-app.use('/images', express.static('images'));
-
+app.use('/images', express.static('images'))
 
 app.use('/api/auth', require('./routes/authRoutes'))
 app.use('/api/volunteer', protectUser, require('./routes/volunteerRoutes'))
