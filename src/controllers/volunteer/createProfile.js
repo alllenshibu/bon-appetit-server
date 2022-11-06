@@ -3,21 +3,21 @@ const User = require('../../models/User')
 const createProfile = async (req, res) => {
     try {
         const { phoneNumber, name, city, state } = req.body;
-        if (!req.file) {
-            res.status(400).json({
-                error: "Image not uploaded"
-            })
-            return
-        }
-        const file = req.file ;
-        const orginalLink= process.env.BASEURL+"images/"+file.originalname;
+        // if (!req.file) {
+        //     res.status(400).json({
+        //         error: "Image not uploaded"
+        //     })
+        //     return
+        // }
+        // const file = req.file ;
+        // const orginalLink= process.env.BASEURL+"images/"+file.originalname;
         const user = await User.findOneAndUpdate(
             { _id: req.user._id },
-            { phoneNumber, name, city, state, imageUrl: orginalLink },
+            { phoneNumber, name, city, state },
             { new: true }
         )
         res.status(200).json({
-            message:"Profile Created",
+            message: "Profile Created",
             data: user
         })
     } catch (error) {
