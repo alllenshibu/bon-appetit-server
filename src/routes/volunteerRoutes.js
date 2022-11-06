@@ -3,9 +3,14 @@ const router = express.Router()
 
 const { createProfile } = require('../controllers/volunteer/createProfile');
 const { protectUser } = require('../middlewares/auth');
-const { upload } = require('../../src/utils/s3');
+const { imageUpload } = require('../../src/utils/s3');
+const path = require('path')
+
 // BASE URL - /api/volunteer
 
-router.put('/createProfile', upload.single('file'),protectUser, createProfile)
+
+
+
+router.put('/createProfile', imageUpload.single('file'), protectUser, createProfile)
 
 module.exports = router

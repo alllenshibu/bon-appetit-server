@@ -3,22 +3,22 @@ const User = require('../../models/User')
 const createProfile = async (req, res) => {
     try {
         const { phoneNumber, name, city, state } = req.body;
-        if(!req.file.location){
+        if (!req.file) {
             res.status(400).json({
                 error: "Image not uploaded"
             })
             return
         }
-        const file = req.file.location;
-        // console.log("file", file)
+        const file = req.file ;
+        const orginalLink= process.env.BASEURL+"images/"+file.originalname;
         const user = await User.findOneAndUpdate(
             { _id: req.user._id },
-            { phoneNumber, name, city, state, imageUrl: file },
+            { phoneNumber, name, city, state, imageUrl: orginalLink },
             { new: true }
         )
-        res.status(201).json({
-            message: 'Profile Created',
-            user: user,
+        res.status(200).json({
+            message:"Profile Created",
+            data: user
         })
     } catch (error) {
         console.log(error)
