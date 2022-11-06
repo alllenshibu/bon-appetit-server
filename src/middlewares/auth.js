@@ -14,12 +14,11 @@ const protectUser = async (req, res, next) => {
 
             // verify token
             const decoded = jwt.verify(token, process.env.JWT_SECRET)
-            // console.log(decoded)
 
             // get user from token
             let details = await User.findById(decoded.id)
             req.user = details
-            console.log(req.user)
+            console.log(req.user.email)
 
             // if (!req.user) {
             //     res.status(401).json({

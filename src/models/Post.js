@@ -42,6 +42,10 @@ const PostSchema = new Schema({
         type: Boolean,
         default: false,
     },
+    isMyself: { // The User will Deliver the food himself 
+        type: Boolean,
+        default: false,
+    },
 })
 
 const Post = mongoose.model('post', PostSchema)
