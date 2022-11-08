@@ -10,7 +10,6 @@ const path = require('path')
 
 
 
-
 router.put('/createProfile', imageUpload.single('file'), protectUser, createProfile)
 
 module.exports = router
