@@ -14,12 +14,7 @@ const createPost = async (req, res) => {
         state,
         contactInfo,
     } = req.body
-    if (!req.file) {
-        res.status(400).json({
-            error: "Image not uploaded"
-        })
-        return
-    }
+ 
     const file = req.file;
     const orginalLink = process.env.BASEURL + "images/" + file.originalname;
     const createdOn = new Date().toUTCString({ timeZone: 'Asia/Tokyo' })
