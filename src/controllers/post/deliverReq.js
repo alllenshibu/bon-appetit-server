@@ -11,13 +11,12 @@ const deliverReq = async (req, res) => {
         if (post.isDelivery == false) {
             post.isDelivery = true;
             post.isDeliveredBy = req.user._id;
-            //sent a post request to the user who has sent the request to api https://w2e9j471i2.execute-api.ap-south-1.amazonaws.com/dev/send-email
             const data = {
                 toEmail: post.userId.email,
                 subject: "Delivery initaited for Food Request",
                 content: `The Food will be delivered By ${req.user.name}.`
             }
-            const response = await axios.post('https://w2e9j471i2.execute-api.ap-south-1.amazonaws.com/dev/send-email', data);
+            const response = await axios.post(process.env.EMAIL, data);
             console.log(response.data);
             await post.save();
         } else if (post.isDelivery == true) {

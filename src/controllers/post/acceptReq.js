@@ -22,7 +22,7 @@ const acceptReq = async (req, res) => {
                 subject: "Food Donation Request Accepted",
                 content: `The Food Request has been accepted by ${req.user.name}.`
             }
-            const response = await axios.post('https://w2e9j471i2.execute-api.ap-south-1.amazonaws.com/dev/send-email', data);
+            const response = await axios.post(process.env.EMAIL, data);
             console.log(response.data);
 
             await post.save();
