@@ -70,8 +70,18 @@
 ## About The Project
  <img src="readmecover.jpeg" alt="Logo" >
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
 
+
+
+Did you know that about 40 % of the food produced in India is wasted?
+Despite adequate food production, the UN has reported that about 190 million Indians remain undernourished. It is further estimated that the
+value of food wastage in India is around ₹92,000 crores per annum.
+These are some bleak statistics, but they should help us realise the magnitude of the problem of food waste, as much as inequity, in India.
+The world recognises that no truly sustainable and developed country can exist without tackling the issue of food waste, and while the challenge
+in front of us may be monumental, some steps need to be taken sooner than others.
+
+This is why we came up with the idea of Bon Appetit.
+Bon Appetit is a small intiative trying to solve the problems of food wastage and hunger by providing a platform which connects people with excess food or people who are willing to contribute food to Non-Profit-Organizations.
 
 
 Here's why:
@@ -79,9 +89,7 @@ Here's why:
 * You shouldn't be doing the same tasks over and over like creating a README from scratch
 * You should implement DRY principles to the rest of your life :smile:
 
-Of course, no one template will serve all projects since your needs may be different. So I'll be adding more in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue. Thanks to all the people have contributed to expanding this template!
 
-Use the `BLANK_README.md` to get started.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
