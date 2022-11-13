@@ -68,7 +68,7 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
- <img src="readmecover.jpeg" alt="Logo" width="80" height="80">
+ <img src="readmecover.jpeg" alt="Logo" >
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 
