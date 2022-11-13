@@ -24,8 +24,7 @@
 
   <p align="center">
     A platform for the good-hearted!
-   
-    <br />
+    <br/>
     <a href="https://github.com/othneildrew/Best-README-Template"><strong>Check Out Our Web App. »</strong></a>
     <br />
     <br />
@@ -69,6 +68,7 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
+ <img src="readmecover.jpeg" alt="Logo" width="80" height="80">
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 
