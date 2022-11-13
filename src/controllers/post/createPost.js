@@ -16,7 +16,7 @@ const createPost = async (req, res) => {
     } = req.body
  
     const file = req.file;
-    const orginalLink = process.env.BASEURL + "images/" + file.originalname;
+    // const orginalLink = process.env.BASEURL + "images/" + file.originalname;
     const createdOn = new Date().toUTCString({ timeZone: 'Asia/Tokyo' })
 
     try {
@@ -34,7 +34,7 @@ const createPost = async (req, res) => {
             city,
             state,
             contactInfo, 
-            imageUrl: orginalLink
+            // imageUrl: orginalLink
         })
 
         res.status(201).json({
