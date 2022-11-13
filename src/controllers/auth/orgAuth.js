@@ -27,6 +27,7 @@ const orgLogin = async (req, res) => {
             return res.status(200).json({
                 message: 'Successfully Logged in',
                 token: token,
+                user: user,
             })
         }
         return res.status(401).json({
