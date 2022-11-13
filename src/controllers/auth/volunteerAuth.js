@@ -27,7 +27,7 @@ const volunteerLogin = async (req, res) => {
             return res.status(200).json({
                 message: 'Successfully Logged in',
                 token: token,
-                user:user,
+                user:admin,
             })
         }
         return res.status(401).json({
