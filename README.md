@@ -23,6 +23,7 @@
   <h2 align="center"> Where Hunger Stops.</h2>
 
   <p align="center">
+    A platform for the good-hearted!
    
     <br />
     <a href="https://github.com/othneildrew/Best-README-Template"><strong>Check Out Our Web App. »</strong></a>
