@@ -186,8 +186,11 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 ## Contact
 
 Jozef Antony - [@jzf21](https://twitter.com/your_username) - email@example.com
+
 Nazim Filzer - [@NzM](https://twitter.com/your_username) - email@example.com
+
 Allen Shibu - [@alapanoski](https://twitter.com/your_username) - email@example.com
+
 Jamal J - [@jamaljm](https://twitter.com/your_username) - email@example.com
 
 Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
