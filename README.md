@@ -25,7 +25,7 @@
   <p align="center">
     A platform for the good-hearted!
     <br/>
-    <a href="https://bonappletea.netlify.app/home"><strong>Check Out Our Web App. »</strong></a>
+    <a href="https://bonappletea.netlify.app"><strong>Check Out Our Web App. »</strong></a>
     <br />
     <br />
     ·
@@ -193,7 +193,7 @@ Allen Shibu - [@alapanoski](https://twitter.com/your_username) - email@example.c
 
 Jamal J - [@jamaljm](https://twitter.com/your_username) - email@example.com
 
-Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
