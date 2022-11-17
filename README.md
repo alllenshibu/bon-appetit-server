@@ -25,14 +25,10 @@
   <p align="center">
     A platform for the good-hearted!
     <br/>
-    <a href="https://bonappletea.netlify.app/home"><strong>Check Out Our Web App. »</strong></a>
+    <a href="https://bonappletea.netlify.app"><strong>Check Out Our Web App. »</strong></a>
     <br />
     <br />
-    ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Request Feature</a>
-    .
+  
   </p>
 </div>
 
@@ -83,12 +79,18 @@ in front of us may be monumental, some steps need to be taken sooner than others
 This is why we came up with the idea of Bon Appetit.
 Bon Appetit is a small intiative trying to solve the problems of food wastage and hunger by providing a platform which connects people with excess food or people who are willing to contribute food to Non-Profit-Organizations.
 
+People who are willing to donate food have said to have faced the following problems
 
-Here's why:
-* Your time should be focused on creating something amazing. A project that solves a problem and helps others
-* You shouldn't be doing the same tasks over and over like creating a README from scratch
-* You should implement DRY principles to the rest of your life :smile:
+* They do not know many organizations who accepts food donations.
+* They do not know how to find a nearby organization.
+* Transportation difficulties.
 
+Our platform aims to solve all these problems by 
+* Making the nearby NGO's visible to all.
+* The people can create requests on how much availabe food they have and the organizations can accept it.
+* Delivery is also done by volunteers. (Or using other delivery partners)
+* Organizations can create request on how much food they need.
+* Top Contributers get their name on the leaderboard.
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -96,55 +98,29 @@ Here's why:
 
 
 ### Built With
+[![My Skills](https://skills.thijs.gg/icons?i=react,mongodb,css,nodejs,figma,netlify&theme=light)](https://skills.thijs.gg)
 
-This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
-
-* [![Next][Next.js]][Next-url]
-* [![React][React.js]][React-url]
-* [![Vue][Vue.js]][Vue-url]
-* [![Angular][Angular.io]][Angular-url]
-* [![Svelte][Svelte.dev]][Svelte-url]
-* [![Laravel][Laravel.com]][Laravel-url]
-* [![Bootstrap][Bootstrap.com]][Bootstrap-url]
-* [![JQuery][JQuery.com]][JQuery-url]
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<img src="https://img.shields.io/badge/replit-667881?style=for-the-badge&logo=replit&logoColor=white"></img>
 
 
-
-<!-- GETTING STARTED -->
-## Getting Started
-
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
-
-### Prerequisites
-
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 
-<!-- USAGE EXAMPLES -->
-## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
 
-_For more examples, please refer to the [Documentation](https://example.com)_
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
 
 
 
 <!-- ROADMAP -->
 ## Roadmap
-
+- [x] Email sent on accepting request.
 - [] Add Upload photo feature
 - [] Add map feature
 - [] Add Multi language support
@@ -155,45 +131,23 @@ See the [open issues](https://github.com/othneildrew/Best-README-Template/issues
 
 
 
-<!-- CONTRIBUTING -->
-## Contributing
-
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-
-If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
-Don't forget to give the project a star! Thanks again!
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
-
-<!-- LICENSE -->
-## License
-
-Distributed under the MIT License. See `LICENSE.txt` for more information.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 
 <!-- CONTACT -->
 ## Contact
 
-Jozef Antony - [@jzf21](https://twitter.com/your_username) - email@example.com
+Jozef Antony - [@jzf21](https://github.com/jzf21) - jozefneelamkavil2003@gmail.com<br/>
 
-Nazim Filzer - [@NzM](https://twitter.com/your_username) - email@example.com
+Nazim Filzer - [@NzM](https://github.com/NzM) - nazimfilzer@gmail.com<br/>
 
-Allen Shibu - [@alapanoski](https://twitter.com/your_username) - email@example.com
+Allen Shibu - [@alapanoski](https://github.com/alapanoski) - allenshibu@outlook.com<br/>
 
-Jamal J - [@jamaljm](https://twitter.com/your_username) - email@example.com
+Jamal J - [@jamaljm](https://github.com/jamaljm) - jamalvga2002@example.com
 
-Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
+Project Link: [https://github.com/jamaljm/BonAppetit](https://github.com/jamaljm/BonAppetit)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
