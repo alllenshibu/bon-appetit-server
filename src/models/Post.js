@@ -52,7 +52,7 @@ const PostSchema = new Schema({
     },
     imageUrl: {
         type: String,
-        default: ''
+        default: null,
     },
 })
 

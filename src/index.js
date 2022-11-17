@@ -10,7 +10,7 @@ const whitelist = [
   'http://127.0.0.1:3000',
   'http://localhost:3000',
   'http://localhost:3000/',
-  'https://bonappletea.netlify.app',
+  'https://bonappletea.netlify.app','https://bonappetit.jamaljm.repl.co'
 ]
 const corsOptions = {
   origin(origin, callback) {
