@@ -15,7 +15,7 @@
 <!-- PROJECT LOGO -->
 
 <div align="center">
-  <a href="https://github.com/othneildrew/Best-README-Template">
+  <a href="https://bonappletea.netlify.app/">
     <img src="logobonappetit.jpeg" alt="Logo" width="80" height="80">
   </a>
 
@@ -112,7 +112,7 @@ Our platform aims to solve all these problems by
 
 
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 
 
 
@@ -121,13 +121,10 @@ Our platform aims to solve all these problems by
 <!-- ROADMAP -->
 ## Roadmap
 - [x] Email sent on accepting request.
-- [] Add Upload photo feature
-- [] Add map feature
-- [] Add Multi language support
+- [x] Add Upload photo feature
+- [ ] Add map feature
+- [ ] Add Multi language support
 
-See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a full list of proposed features (and known issues).
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 
@@ -141,7 +138,7 @@ See the [open issues](https://github.com/othneildrew/Best-README-Template/issues
 
 Jozef Antony - [@jzf21](https://github.com/jzf21) - jozefneelamkavil2003@gmail.com<br/>
 
-Nazim Filzer - [@NzM](https://github.com/NzM) - nazimfilzer@gmail.com<br/>
+Nazim Filzer - [@NzM](https://github.com/NazimFilzer) - nazimfilzer@gmail.com<br/>
 
 Allen Shibu - [@alapanoski](https://github.com/alapanoski) - allenshibu@outlook.com<br/>
 
