@@ -6,10 +6,9 @@ const sharp = require('sharp')
 const uploadImage = async (req, res) => {
     try {
         const file = req.file
-        const postId= req.params.id
+        const postId = req.params.id
         // Check if Postid is in Post Collection
-        const myPost = await Post.findById
-        (postId)
+        const myPost = await Post.findById(postId);
         if (!myPost) {
             return res.status(404).json({
                 message: 'Post not found'
@@ -21,8 +20,9 @@ const uploadImage = async (req, res) => {
         // const fileBuffer = await sharp(file.buffer)
         //     .resize({ height: 1920, width: 1080, fit: "contain" })
         //     .toBuffer()
-        const fileBuffer = file.buffer
+        const fileBuffer = file.buffer;
 
+        // console.log(imageName)
         await uploadFile(fileBuffer, imageName, file.mimetype)
         const post = await Post.findOneAndUpdate(
             { _id: postId },

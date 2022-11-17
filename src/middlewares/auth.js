@@ -18,7 +18,6 @@ const protectUser = async (req, res, next) => {
             // get user from token
             let details = await User.findById(decoded.id)
             req.user = details
-            console.log(req.user)
 
             // if (!req.user) {
             //     res.status(401).json({

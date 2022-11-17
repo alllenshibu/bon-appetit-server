@@ -9,11 +9,11 @@ const accessKeyId = process.env.ACCESS_KEY
 const secretAccessKey = process.env.ACCESS_SECRET
 
 const s3Client = new S3Client({
-    region,
     credentials: {
-        accessKeyId,
-        secretAccessKey
-    }
+        accessKeyId: accessKeyId,
+        secretAccessKey: secretAccessKey
+    },
+    region: region
 })
 
 
@@ -44,7 +44,7 @@ const getObjectSignedUrl = async (key) => {
     }
     // https://aws.amazon.com/blogs/developer/generate-presigned-url-modular-aws-sdk-javascript/
     const command = new GetObjectCommand(params);
-    const seconds = 60*15 
+    const seconds = 60 * 15
 
     const url = await getSignedUrl(s3Client, command, { expiresIn: seconds });
 
